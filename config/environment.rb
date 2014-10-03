@@ -7,14 +7,14 @@ require 'bundler/setup' if File.exists?(ENV['BUNDLE_GEMFILE'])
 
 # Require gems we care about
 require 'rubygems'
-
+require 'pry'
 require 'uri'
 require 'pathname'
 
 require 'pg'
 require 'active_record'
 require 'logger'
-
+require 'bcrypt'
 require 'sinatra'
 require "sinatra/reloader" if development?
 

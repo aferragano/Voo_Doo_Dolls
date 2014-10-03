@@ -10,9 +10,9 @@ gem 'sinatra-contrib'
 
 gem 'activesupport', '~>4.1'
 gem 'activerecord', '~>4.1'
-
+gem 'pry'
 gem 'rake'
-
+gem 'bcrypt', '~> 3.1.7'
 gem 'shotgun'
 
 group :test do
