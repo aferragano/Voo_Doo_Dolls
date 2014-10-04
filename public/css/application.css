@@ -1,0 +1,26 @@
+body{
+	background-color: #F9ECBA;
+	color: #85324E;
+	
+	font-family: 'Permanent Marker', cursive;
+}
+button {
+	background-color: #BF4186;
+	border-radius: 40px; 
+
+}
+h1{
+	background-color:#BF4186;
+	color: #F9ECBA;
+	margin: 12px;
+	padding: 12px;
+}
+nav {
+	margin: 6px;
+	padding: 6px;	
+	display: inline-block;
+	color: #F9ECBA;
+}
+nav li{
+	display: inline-block;
+}
