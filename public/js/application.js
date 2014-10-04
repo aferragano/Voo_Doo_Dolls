@@ -10,7 +10,7 @@ $(document).ready(function() {
 		$(buttonID).on('click', function(){
 	    	$(showItem).show();
 	    	$(buttonID).on('click', function(){
-	    	$(showItem).hide();
+	    	$(showItem).hide(hideShow(buttonID, showItem));
 	    })
 
 	    })

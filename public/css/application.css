@@ -1,26 +1,42 @@
 body{
 	background-color: #F9ECBA;
 	color: #85324E;
-	
 	font-family: 'Permanent Marker', cursive;
 }
+div {
+	padding: 5px;
+}
 button {
-	background-color: #BF4186;
+	background-color: #85324E;
 	border-radius: 40px; 
-
+	border: none;
+	margin-left: 22px;
+	margin-right:22px;
+}
+button:hover{
+	background-color: #BF4186;
 }
 h1{
-	background-color:#BF4186;
+	background-color:#85324E;
 	color: #F9ECBA;
 	margin: 12px;
 	padding: 12px;
+	text-align: center;
 }
 nav {
 	margin: 6px;
 	padding: 6px;	
-	display: inline-block;
+	display: center;
 	color: #F9ECBA;
+	margin-right: auto;
+	margin-left: auto;
 }
 nav li{
 	display: inline-block;
+}
+.doll-block{
+	margin: 10px;
+	background-color:#85324E;
+	width:200px;
+	height:300px;
 }
