@@ -10,14 +10,43 @@
   <!--
     application.css is where you put your styles
   -->
+  <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/application.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
-  <title></title>
+  <title>Voo DOOOOOO dolls</title>
 </head>
 <body>
+<h1>Voo Dooo DOLLS</h1>
+<nav>
+  <ul>
+    <%if session[:user_id]%>
+      <li><a href="/logout"><button id="logout">Logout</button></a></li>
+      <li><button id="/create_doll">Create</button></li>
+        <%else%>
+        <li><button id="login">Login</button></li>
+        <li><button id="new-user">New User</button></li>
+      <%end%>
+    </ul>
+      </nav>
+    <div id="login-div"><form input="/session" method="POST"><p>
+        Username: <br>
+        <input type="text" name="user[username]"><p>
+        Password: <br>
+        <input type="password" name="user[password]"><p>
+        <input type="submit" name="submit">
+      </form></div>
+
+    <div id="signup-div"><form input="/session/new" method="POST"><p>
+        Create Username: <br>
+        <input type="text" name="user[username]"><p>
+        Create User Password: <br>
+        <input type="password" name="user[password]"><p>
+        <input type="submit" name="submit">
+      </form></div>
+
   <%= yield %>
 </body>
 </html>
