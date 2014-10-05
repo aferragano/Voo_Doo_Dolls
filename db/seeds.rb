@@ -1,4 +1,5 @@
 User.create(username: "Sarah", password: "test")
+User.create(username: "anthony", password: "anthony")
 Doll.create(name: 'Test', story: 'test')
 Doll.create(name: 'Test', story: 'test')
 Doll.create(name: 'Test', story: 'test')
