@@ -4,4 +4,16 @@ $(document).ready(function() {
   // when we try to bind to them
 
   // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+	$('#login-div').hide();
+	$('#signup-div').hide();
+
+
+	function hideShow(buttonID, showItem){
+		$(buttonID).on('click', function(){
+	    	$(showItem).show();
+	    })
+	}
+	hideShow($('#login'),$('#login-div'))
+	hideShow($('#new-user'),$('#signup-div'))
+
 });
