@@ -1,8 +1,10 @@
-get '/session' do 
+enable :sessions
 
+get '/session' do
+  erb :login
 end
 
-post '/session' do 
+post '/session' do
 	@user = User.authenticate(params[:user])
 	session[:user_id] = @user.id
 	redirect '/'

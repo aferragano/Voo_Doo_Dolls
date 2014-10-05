@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- 
+  <!--
     normalize.css removes cross-browser differences in defaults, e.g.,
     differences in how form elements appear between Firefox and IE
     See: http://necolas.github.com/normalize.css/
@@ -23,7 +23,7 @@
     <%if session[:user_id]%>
       <li><a href="/logout"><button id="logout">Logout</button></a></li>
       <li><button id="/create_doll">Create</button></li>
-<!--               <div class="login">
+              <div class="login">
                 <h2> logou</h2>
                 <form input="/session" method="POST">
                   username:
@@ -32,7 +32,7 @@
                   <input type="password" name="user[password]"><p>
                   <input type="submit" name="submit">
                 </form>
-              </div> -->
+              </div>
         <%else%>
         <li><button id="login">Login</button></li>
         <li><button id="new-user">New User</button></li>
