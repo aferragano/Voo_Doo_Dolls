@@ -22,12 +22,22 @@ button {
 button:hover{
 	background-color: #BF4186;
 }
-h1, .doll-name{
+h1{
 	background-color:#85324E;
-	font-size: 3em;
+	font-size: 2em;
 	color: #F9ECBA;
-	margin: 12px;
-	padding: 12px;
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+
+}
+
+.doll-name{
+	background-color:#85324E;
+	font-size: 2em;
+	color: #F9ECBA;
+	margin: 5px;
+	padding: 5px;
 	text-align: center;
 
 }
@@ -45,9 +55,10 @@ nav li{
 .doll-block{
 	margin: 10px;
 	background-color:#85324E;
-	width:250px;
-	/*height:400px;*/
+	width:300px;
+	height:625px;
 	float: left;
+	overflow: scroll;
 }
 .doll-block button{
 	background-color:  #F9ECBA;
@@ -56,6 +67,7 @@ nav li{
 .story_text {
 	color: #F9ECBA;
 	display: none;
+	overflow: scroll;
 }
 
 a {
