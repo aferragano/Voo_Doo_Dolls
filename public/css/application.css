@@ -38,9 +38,14 @@ nav li{
 	margin: 10px;
 	background-color:#85324E;
 	width:250px;
-	height:400px;
+	/*height:400px;*/
 	float: left;
 }
 .doll-block button{
 	background-color:  #F9ECBA;
+}
+
+.story_text {
+	color: #F9ECBA;
+	display: none;
 }
