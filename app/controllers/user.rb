@@ -5,7 +5,7 @@ get '/session' do
 end
 
 post '/session' do
-	@user = User.authenticate(params[:user])
+	@user = User.find_by(username: params[:user][:username]).try(:authenticate, params[:user][:username])
 	session[:user_id] = @user.id
 	redirect '/'
 end
