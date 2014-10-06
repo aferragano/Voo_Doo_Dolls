@@ -1,4 +1,4 @@
-<div>ALL THE DOLLS HERE</div>
+<div id="dolls">ALL THE DOLLS HERE</div>
 <ul>
   <% @dolls.each do |doll| %>
     <%= erb :_doll, :layout => false, :locals => {doll: doll} %>

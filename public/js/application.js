@@ -17,6 +17,12 @@ $(document).ready(function() {
 
 	pinItEventListener();
 
+	$('.doll-block').hover(function(){
+		$(this).children('.story_text').slideToggle();
+	}, function(){
+		$(this).children('.story_text').slideToggle();
+	});
+
 });
 
 function pinItEventListener(){
