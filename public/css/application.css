@@ -49,3 +49,10 @@ nav li{
 	color: #F9ECBA;
 	display: none;
 }
+
+.message {
+	color: #F9ECBA;
+	display: none;
+	z-index: 1;
+	position: absolute;
+}
