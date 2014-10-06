@@ -8,11 +8,8 @@ $(document).ready(function() {
 	function hideShow(buttonID, showItem){
 		$(showItem).hide();
 		$(buttonID).on('click', function(){
-	    	$(showItem).show();
-	    	$(buttonID).on('click', function(){
-	    	$(showItem).hide(hideShow(buttonID, showItem));
-	    })
-
+	    	$(showItem).slideToggle("slow", function(){	    		
+	    	});
 	    })
 	}
 	hideShow($('#login'),$('#login-div'))
