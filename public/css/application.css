@@ -16,7 +16,7 @@ button {
 button:hover{
 	background-color: #BF4186;
 }
-h1{
+h1, .doll-name{
 	background-color:#85324E;
 	color: #F9ECBA;
 	margin: 12px;
