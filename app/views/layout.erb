@@ -22,6 +22,7 @@
 <h1>Voo Dooo DOLLS</h1>
 <nav>
   <ul>
+
     <%if session[:user_id]%>
       <li><a href="/logout"><button id="logout">Logout</button></a></li>
       <li><a href="/dolls/new"><button id="create_doll">Create</button></a></li>
@@ -41,7 +42,7 @@
       <%end%>
     </ul>
       </nav>
-    <div id="login-div"><form action="/session" method="POST"><p>
+    <div id="login-div"><form input="/session" method="POST"><p>
         Username: <br>
         <input type="text" name="user[username]"><p>
         Password: <br>
@@ -49,7 +50,7 @@
         <input type="submit" name="submit">
       </form></div>
 
-    <div id="signup-div"><form action="/session/new" method="POST"><p>
+    <div id="signup-div"><form input="/session/new" method="POST"><p>
         Create Username: <br>
         <input type="text" name="user[username]"><p>
         Create User Password: <br>
