@@ -43,3 +43,6 @@ nav li{
 .doll-block button{
 	background-color:  #F9ECBA;
 }
+li {
+	display: inline-block;
+}

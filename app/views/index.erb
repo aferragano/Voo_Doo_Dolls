@@ -1,7 +1,7 @@
-<div>ALL THE DOLLS HERE</div>
+<div>ALL THE DOLLS HERE!</div>
 <ul>
   <% @dolls.each do |doll| %>
-    <%= erb :_doll, :layout => false, :locals => {doll: doll} %>
+    <li><%= erb :_doll, :layout => false, :locals => {doll: doll} %></li>
   <% end %>
 </ul>
 
