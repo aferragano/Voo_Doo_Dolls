@@ -1,8 +1,8 @@
 <div>ALL THE DOLLS HERE</div>
 <ul>
   <% @dolls.each do |doll| %>
-    <li><%= doll.name %><%= doll.story %></li>
+    <%= erb :_doll, :layout => false, :locals => {doll: doll} %>
   <% end %>
 </ul>
 
-<div class="doll-block"><button>pin it</button><button>story</button></div>
+
