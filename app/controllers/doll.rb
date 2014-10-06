@@ -12,7 +12,7 @@ get '/dolls/:id' do
 end
 
 post '/dolls' do
-  @doll = Doll.create(name: params[:name], story: params[:story])
+  @doll = Doll.create(name: params[:name], story: params[:story], user_id: session[:user_id])
   redirect "/"
 end
 
