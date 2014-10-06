@@ -10,7 +10,7 @@ post '/session' do
 	redirect '/'
 end
 
-delete '/session' do
+get '/logout' do
   session.clear
   redirect '/'
 end
