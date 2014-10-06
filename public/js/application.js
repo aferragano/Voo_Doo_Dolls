@@ -29,6 +29,8 @@ function pinItEventListener(){
 	$('.doll-block').on('click','.pin-it' ,function(event){
 		event.preventDefault;
 
+		$(this).parent().children('.message').fadeIn();
+		$(this).parent().children('.message').fadeOut(1000);
 		var dollId = $(this).parent().attr('id');
 		var url = '/doll/' + dollId + '/pin';
 		
