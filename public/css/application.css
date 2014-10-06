@@ -37,8 +37,9 @@ nav li{
 .doll-block{
 	margin: 10px;
 	background-color:#85324E;
-	width:200px;
-	height:300px;
+	width:250px;
+	height:400px;
+	float: left;
 }
 .doll-block button{
 	background-color:  #F9ECBA;
