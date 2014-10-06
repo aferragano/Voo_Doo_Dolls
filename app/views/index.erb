@@ -1,4 +1,4 @@
-<div id="dolls">ALL THE DOLLS HERE</div>
+<div id="dolls">View some VooDoo dolls <p>create your own by logging in or signing up<p> read the stories, and see if they are pin worthy</div>
 <ul>
   <% @dolls.each do |doll| %>
     <%= erb :_doll, :layout => false, :locals => {doll: doll} %>
