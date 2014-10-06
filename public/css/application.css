@@ -1,10 +1,14 @@
 body{
 	background-color: #F9ECBA;
 	color: #85324E;
+	font-size: 1em;
 	font-family: 'Permanent Marker', cursive;
+	text-align: center;
 }
+
 div {
 	padding: 5px;
+	margin:8px;
 }
 button {
 	background-color: #85324E;
@@ -12,16 +16,20 @@ button {
 	border: none;
 	margin-left: 22px;
 	margin-right:22px;
+	padding:6px;
+	font-size: 1.5em;
 }
 button:hover{
 	background-color: #BF4186;
 }
 h1{
 	background-color:#85324E;
+	font-size: 3em;
 	color: #F9ECBA;
 	margin: 12px;
 	padding: 12px;
 	text-align: center;
+
 }
 nav {
 	margin: 6px;
@@ -49,3 +57,7 @@ nav li{
 	color: #F9ECBA;
 	display: none;
 }
+a {
+	color:#F9ECBA;
+}
+
