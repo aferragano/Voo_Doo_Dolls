@@ -25,16 +25,7 @@
     <%if session[:user_id]%>
       <li><a href="/logout"><button id="logout">Logout</button></a></li>
       <li><a href="/dolls/new"><button id="create_doll">Create</button></a></li>
-              <div class="login">
-                <h2> logou</h2>
-                <form input="/session" method="POST">
-                  username:
-                  <input type="text" name="user[username]"><p>
-                  password:
-                  <input type="password" name="user[password]"><p>
-                  <input type="submit" name="submit">
-                </form>
-              </div>
+
         <%else%>
         <li><button id="login">Login</button></li>
         <li><button id="new-user">New User</button></li>
