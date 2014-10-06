@@ -6,5 +6,10 @@
 	<span class="message">OWW!</span>
 	<h1> <%= doll.pins %> </h1>
 	<p class="story_text"><%= doll.story %></p>
-	<button action="/doll/<%= doll.id %>"  name="_method" value="delete">delete</button>
+	<% if session[:user_id] && doll.user && session[:user_id] == doll.user.id %>
+		<form action="/doll/<%= doll.id %>"  method="POST">
+			<input type="hidden" name="_method" value="DELETE">
+			<input type="submit" value="delete">
+		</form>
+	<% end %>
 </div>
