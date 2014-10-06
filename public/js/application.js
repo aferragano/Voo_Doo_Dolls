@@ -18,5 +18,26 @@ $(document).ready(function() {
 	hideShow($('#login'),$('#login-div'))
 	hideShow($('#new-user'),$('#signup-div'))
 
+	pinItEventListener();
+
 });
+
+function pinItEventListener(){
+	$('.doll-block').on('click','.pin-it' ,function(event){
+		event.preventDefault;
+
+		var dollId = $(this).parent().attr('id');
+		var url = '/doll/' + dollId + '/pin';
+		
+		$.ajax({
+        type: 'PUT',
+        url: url,
+        })
+		.done(function(response){
+			var doll = $.parseJSON(response);
+			$('#' + doll.id+ " h1").text(doll.pins);
+		});
+	});
+}
+
 

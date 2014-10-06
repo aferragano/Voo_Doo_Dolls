@@ -21,3 +21,10 @@ delete '/doll/:id' do
   @doll.destroy
   redirect '/'
 end
+
+put '/doll/:id/pin' do
+	@doll = Doll.find(params[:id])
+	pins = @doll.pins += 1
+	@doll.update(pins: pins)
+	{id: @doll.id, pins: @doll.pins}.to_json
+end
