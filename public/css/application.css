@@ -59,6 +59,7 @@ nav li{
 	height:625px;
 	float: left;
 	overflow: scroll;
+	position: relative;
 }
 .doll-block button{
 	background-color:  #F9ECBA;
@@ -80,3 +81,15 @@ a {
 	z-index: 1;
 	position: absolute;
 }
+
+.delete {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.delete button {
+	color: #F9ECBA;
+	background-color: #85324E;
+}
+
